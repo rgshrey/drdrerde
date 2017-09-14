@@ -1,0 +1,15 @@
+{% extends "songs/base.html" %}
+
+{% block content %}
+
+<h3>Songs</h3>
+
+<ul>
+  {% for song in songs %}
+    <li><a href="{% url 'songs:song' song.id %}">{{ song }}</a></li>
+  {% empty %}
+    <li>No song titles found</li>
+  {% endfor %}
+</ul>
+
+{% endblock content %}

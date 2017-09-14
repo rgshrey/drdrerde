@@ -1,0 +1,30 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: courier, monospace;
+  font-size: 1em;
+}
+nav {
+  color: white;
+  font-size: 2em;
+  float: left;
+}
+a:link, a:visited {
+  background-color: black;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: gray;
+}
+h1 {
+  font-size: 3em;
+}
+#content {
+  float: left;
+  padding-top: 38px;
+  padding-left: 100px;
+}

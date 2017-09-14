@@ -1,0 +1,30 @@
+{% extends "songs/base.html" %}
+
+{% block content %}
+<script> 
+  function toggleLanguage(language){
+    var elements = document.getElementsByClassName(language);
+    for(var i = 0; i < elements.length; i++){
+      if (elements[i].style.display !== 'none'){
+        elements[i].style.display = 'none';
+      }
+      else {elements[i].style.display = 'table-cell';}
+    }
+  }
+</script>
+
+<p>Toggle Languages: <button onclick="toggleLanguage('english')">English </button> <button onclick="toggleLanguage('arabic')">عربى </button> <button onclick="toggleLanguage('german')">Deutsche </button> </p>
+<table>
+<tr>
+  <th class='english'>{{english_title|linebreaks}}</th>
+  <th class='arabic'>{{arabic_title|linebreaks}}</th>
+  <th class='german'>{{german_title|linebreaks}}</th>
+</tr>
+<tr>
+  <td class='english'>{{english_text|linebreaks}}</td>
+  <td class='arabic'>{{arabic_text|linebreaks}}</td>
+  <td class='german'>{{german_text|linebreaks}}</td>
+</tr>
+</table>
+
+{% endblock content %}

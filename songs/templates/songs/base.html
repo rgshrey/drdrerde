@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Dr. Dr. Erde's Wonderful World</title>
+    <link href="/static/songs/base.css" type="text/css" rel="stylesheet" />
+  </head>
+  <header>
+    <h1>Dr. Dr. Erde's Wonderful World</h1>
+    <h3>Learn languages with music</h3>
+  </header>
+  <nav>
+    <h3>
+      <a href="{% url 'songs:index' %}">Home</a>
+      <a href="{% url 'songs:songs' %}">Songs</a>
+    </h3>
+  </nav>
+  <body>
+    <div id="content">
+      {% block content %} {% endblock content %}
+    </div>
+  </body>
+</html>
