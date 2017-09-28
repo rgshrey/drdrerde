@@ -7,7 +7,7 @@ body {
 nav {
   color: white;
   font-size: 2em;
-  max-width: 100px;
+
   float: left;
 }
 a:link, a:visited {
